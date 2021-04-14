@@ -1,5 +1,7 @@
 .container{
-    /* background: blueviolet;
-    color: #fff;
-    text-align: justify; */
+    box-sizing: border-box;
 }
+p{
+    text-align: center;
+}
+
