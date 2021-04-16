@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First bootstrap webpage</title>
+    <!-- font awesome cdn copy link tag -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- Add bootstrap CDN here -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .my_link:hover{
+            text-decoration: underline;
+            
+        }
+        .my_color{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header >
+             <!-- instead of pt + pb = py padding y-asis. for ul we need to use the 
+                1. class navbar-nav instead of "nav" and 2. class nav-item in li then 
+                3. class nav-link for a 4. use text-white and any custom class lik here my_link
+                5. now to  create a navbar the class "navbar" is must in the nav tag
+                6. now to make the items horizontal or inline we need to use class "navbar-expand"- in the nav tag
+                7. to chage color of all the li items use class navbar-dark in nav tag.
+                8. to make active one item in the navbar we can use a class named 'active' in li.
+                9. to use navbar logo use the class "navbar-brand" and logo will  be always used before the ul tag and always us the logo inside a tag.We can also use style tag to define the width of the logo.
+                10. to do alignment of the navbar use "justify-content-center" in nav tag
+                11. now to align the li items use class "ml-auto" in ul
+                12. now for positioning the navbar use the classes like:
+                    i) fixed-top --- then the navbar will be fixed in the top 
+                    ii) fixed-bottom---then the navbar will be fixed in the bottom
+                13. now to make the collapsible menu go to the bootstrap official website then component
+                ---navbar---and copy the <button> tag and paste it before ul
+
+                 -->
+                <nav class="navbar navbar-expand-sm  navbar-dark  bg-primary">
+                    <a class="navbar-brand"  href="#">
+                        <img src="img/logo.png" alt="" style="width:50px">
+                    </a>
+                    <!-- this is the button to collapse -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <!-- now copy a div with collapse class from bootstrap and keep ul inside it -->
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active"><a  class="nav-link "  href="#">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Tutorial</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+                </nav>
+                    
+                
+                    
+            
+                    
+
+        </header>
+         <!-- Main section starts here  -->
+        <main>
+            <div class="service-section bg-light  pt-3">
+                <div class="tittle text-center mb3 ">
+                    <h3 class="font-weight-bold">Services</h3>
+                </div>
+                <div class="row text-left text-md-center">
+                    <div class="col-lg-3 col-md-6">
+                        <!-- now we can design the icon and increase the size by using fa-2x to change the icon color use text-white or any color -->
+                        <i class=" bg-primary p-2 fa-2x text-white rounded-circle mb-3 fas fa-hands-helping"></i>
+                        <h5 class="text-uppercase">Web design</h5>
+                        <p class="small text-muted">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ipsam temporibus unde adipisci distinctio quae non incidunt eius commodi odit.
+              
+                        </p>
+    
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <i class=" bg-primary p-2 fa-2x text-white rounded-circle mb-3 fas fa-hands-helping"></i>
+                        <h5 class="text-uppercase">Web design</h5>
+                        <p class="small text-muted">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ipsam temporibus unde adipisci distinctio quae non incidunt eius commodi odit.
+              
+                        </p>
+    
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <i class=" bg-primary p-2 fa-2x text-white rounded-circle mb-3 fas fa-hands-helping"></i>
+                        <h5 class="text-uppercase">Web design</h5>
+                        <p class="small text-muted">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ipsam temporibus unde adipisci distinctio quae non incidunt eius commodi odit.
+              
+                        </p>
+    
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <i class=" bg-primary p-2 fa-2x text-white rounded-circle mb-3 fas fa-hands-helping"></i>
+                        <h5 class="text-uppercase">Web design</h5>
+                        <p class="small">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ipsam temporibus unde adipisci distinctio quae non incidunt eius commodi odit.
+              
+                        </p>
+    
+                    </div>
+                    
+            </div>
+
+
+
+            <!-- About me section with jumborton -->
+            <div class="about_section">
+                <div class="jumbotron pt-2">
+                    <div class="tittle text-center mb3 ">
+                        <h3 class="font-weight-bold">About Me</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 text-center">
+                            <img  class="img-fluid rounded-circle" src="https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20Stockimo,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1483011988/sfrnnxxjhuhrincqmckm.jpg" alt="">
+
+                        </div>
+                        <div class="col-lg-8">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus unde vitae commodi, magni officiis optio earum fuga ex obcaecati, officia saepe vel ullam. Odio, provident quos? Fugiat harum alias distinctio nam, expedita veniam magnam consequuntur dolorum cumque nostrum in cum velit. Quaerat non expedita numquam mollitia labore accusantium excepturi voluptas debitis, impedit optio, dolorum architecto. Maiores minima dolores, 
+                            </p>
+                            <a class="d-block mb-3" href="#demo" data-toggle="collapse">Learn more</a>
+                            <div id="demo"  class="collapse">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam pariatur dolor, ducimus repellat doloribus similique at perspiciatis facere aut maiores dignissimos ab in minus iste illo iusto ipsam voluptatum voluptatem? Temporibus iste ad, suscipit dignissimos laudantium nihil distinctio ut pariatur fugit aliquam sequi hic itaque? Esse veniam quasi natus dignissimos.
+
+                            </div>
+                            <!-- Button Area Starts All button class starts with  "btn"-->
+                            <!-- This button classes can also be used for anchor(a) and input tag. -->
+                            <!-- NOW KEEP All the buttons inside a button-group class -->
+                            <div class="btn-group ">
+                                <button class="btn btn-outline-primary  mb-3  " >CD Download</button>
+                                <button class="btn btn-outline-primary  mb-3" >CD Download</button>
+                                <!-- <a href="" class="btn btn-outline-danger mb-3">Visit my website</a> -->
+                            </div>
+
+                            <!-- Button Area Ends-->
+
+                            <div class="alert alert-danger alert-dismissible">
+                                <button class="close" data-dismiss="alert"> &times;</button>
+                                Have you visited my website? <a href="https://psdproject1.netlify.app/">Visit Here</a>
+                            </div>
+                            <div class="alert alert-success alert-dismissible">
+                                <button class="close" data-dismiss="alert"> &times;</button>
+                                Have you visited my website? <a href="https://psdproject1.netlify.app/">Visit Here</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <!-- About section ends here -->
+
+
+            <!-- card section starts here -->
+            <!-- To prepare card the first we have to use :
+                1. class 'card' in a div now use
+                2. class card-header, card-body and card-footer bootstrap class in the cards header, body and footer parts
+                now we will make some changes in the body parts. to create a header use
+                3. class "card-title" and use another class in a p tag
+                4. "card-text" now we can use 
+                5. class "card-link" in a tag 
+                  now place an img before the card body but inside the card div. to do this use a class
+                6. class "card-img-top or bottom"   if i want to set the image in the bottom then use the img tag below the
+                card-body div and use class "card-img-bottom" now to make the card clickable use a class
+                7. "streched-link" in a tag inside the card-body div -->
+            <div class="card_section">
+                <div class="tittle text-center mb3 ">
+                    <h3 class="font-weight-bold">Card section</h3>
+                </div>
+                <div class="row">
+                    <!-- first card starts -->
+                    <div class="col-lg-3">
+                        <div class="card text-center">
+                            
+                            <img class="card-img-top"    src="http://www.studywithanis.com/wp-content/uploads/2018/01/ICT-Cover.jpg" alt="card">
+                            
+                            <div class="card-body">
+                                <h4 class="card-title">HSC ICT</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat,
+                                     eveniet.
+                                </p>
+                                <a class="card-link  stretched-link"  href="#"> Visit my website</a>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <!-- first card ends -->
+                    <div class="col-lg-3">
+                        <div class="card text-center">
+                            
+                            <img class="card-img-top"    src="http://www.studywithanis.com/wp-content/uploads/2018/01/ICT-Cover.jpg" alt="card">
+                            
+                            <div class="card-body">
+                                <h4 class="card-title">HSC ICT</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat,
+                                     eveniet.
+                                </p>
+                                <a class="card-link  stretched-link"  href="#"> Visit my website</a>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card text-center">
+                            
+                            <img class="card-img-top"    src="http://www.studywithanis.com/wp-content/uploads/2018/01/ICT-Cover.jpg" alt="card">
+                            
+                            <div class="card-body">
+                                <h4 class="card-title">HSC ICT</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat,
+                                     eveniet.
+                                </p>
+                                <a class="card-link  stretched-link"  href="#"> Visit my website</a>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card text-center">
+                            
+                            <img class="card-img-top"    src="http://www.studywithanis.com/wp-content/uploads/2018/01/ICT-Cover.jpg" alt="card">
+                            
+                            <div class="card-body">
+                                <h4 class="card-title">HSC ICT</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat,
+                                     eveniet.
+                                </p>
+                                <a class="card-link  stretched-link"  href="#"> Visit my website</a>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                
+
+            </div>
+
+
+            <!-- card section ends here -->
+
+            <!-- customer review section starts here-->
+            <div class="customer_review bg-light text-center">
+                <div class="tittle text-center mb3 ">
+                    <h3 class="font-weight-bold">Customer Review</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <blockquote class="blockquote">
+                            <p>
+                                <i class="p-2 fa-3x fas fa-user-circle"></i>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta possimus nihil recusandae nostrum est voluptas.
+                                <!-- now to see the abbreviation  -->
+                                From here we can learn about <abbr title="Bootstrap 4">BS4</abbr>
+                            </p>
+                            <footer class="blockquote-footer">
+                                   Hossain in <cite>Youtube</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-lg-4">
+                        <blockquote class="blockquote">
+                            <p>
+                                <i class="p-2 fa-3x fas fa-user-circle"></i>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta possimus nihil recusandae nostrum est voluptas.
+                                <!-- now to see the abbreviation  -->
+                                From here we can learn about <abbr title="Bootstrap 4">BS4</abbr>
+                            </p>
+                            <footer class="blockquote-footer">
+                                   Hossain in <cite>Youtube</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-lg-4">
+                        <blockquote class="blockquote">
+                            <p>
+                                <i class="p-2 fa-3x fas fa-user-circle"></i>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta possimus nihil recusandae nostrum est voluptas.
+                                <!-- now to see the abbreviation  -->
+                                From here we can learn about <abbr title="Bootstrap 4">BS4</abbr>
+                            </p>
+                            <footer class="blockquote-footer">
+                                   Hossain in <cite>Youtube</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- customer review section ends here  -->
+
+
+             <!-- Toggleable dynamic tab/till start -->
+              <!-- To create pills we have to only change:
+                1. in  ul instead of nav-tab use nav-pill
+                2. in a use  data-toggle= "pill" Actually there is no difference between pill and toggle except a style.-->
+
+            <div class="other_section">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link active" data-toggle="tab"  href="#edu">Education</a></li>
+                    <li class="nav-item"><a class="nav-link fade" data-toggle="tab" href="#skill">Skill</a></li>
+                    <li class="nav-item"><a class="nav-link fade"data-toggle="tab" href="#hobby">Hobby</a></li>
+                </ul>
+                <!-- now keep all the content wants to show in a bootstrap class tab-content -->
+                 
+                
+               
+               
+                <div class="tab-content">
+                    <div id="edu" class="tab-pane">
+                        <p> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odio possimus minus ipsum adipisci sapiente, beatae porro atque velit. Aut quasi ipsum eveniet ducimus ipsam est expedita, alias explicabo qui hic modi sequi similique reprehenderit animi illo temporibus dolor exercitationem veniam suscipit accusamus officiis iusto eaque voluptas obcaecati. Nisi, a.
+    
+                        </p>
+                    </div>
+                    <div id="skill" class="tab-pane">
+                        <p> 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, saepe aperiam? Neque officiis ad aliquam atque doloremque dolorem facere libero.
+                            
+                        </p>
+                    </div>
+                    <div id="hobby" class="tab-pane">
+                        <p> 3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, saepe aperiam? Neque officiis ad aliquam atque doloremque dolorem facere libero.
+                            
+                        </p>
+                    </div>
+                </div>
+    
+                </div>
+             <!-- Toggleable dynamic tab/pill ends -->
+
+
+
+           
+
+
+
+            <!-- Students list starts here -->
+            <div class="students_list">
+                <ul class="list-group">
+                    <li class="list-group-item bg-primary text-white">Shakhawat</li>
+                    <li class="list-group-item bg-success text-white">Nargis</li>
+                    <li class="list-group-item bg-secondary text-white">Najifa</li>
+                    <li class="list-group-item bg-danger text-white">Najiba</li>
+                    <a href="" class="list-group-item  list-group-item-action bg-light test-white ">Rafique</a>
+
+                </ul>
+            </div>
+            <!-- Students list starts here -->
+
+
+
+            
+
+        </main>
+        <!-- Main section ends here -->
+        <footer class="bg-dark">
+            <!-- Pagination starts:  -->
+            <!-- pagination is used when ther are more than one page in a website and need to go from one page to other.
+            1. use class pagination with ul then use 2. class page-item with li and 3.use class page-link with a
+         -->
+            
+            <!-- Pagination starts:  -->
+            <ul class="pagination py-3 justify-content-center">
+                <li class="page-item"><a class="page-link"  href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+
+        </footer>
+    </div>
+    
+    <!-- Jquery, popper and js -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+        </script>
+</body>
+</html>
