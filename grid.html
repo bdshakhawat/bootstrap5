@@ -7,27 +7,139 @@
     <title>Bootstrap Grid</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <!-- in bootstrap:
-    padding-top-- class "pt"
-    padding-bottom---class"bt"
-    padding-left---pl
-    padding-right---pr
+    
+</head>
+<body>
+    <!-- 
+        <!-- in bootstrap:
+    1. padding-top-- class "pt"
+    2. padding-bottom---class"pb"
+    3. padding-left---pl
+    4. padding-right---pr
     for padding in all sides we can use 0 to 5 after p like p-0 = No padding, p-1 =0.25rem padding in all sides,
      p-2= 0.5rem padding in all sides,  p-2=1rem padding in all sides, p-3=1.5rem padding in all sides, p-4=2rem padding in all sides, p-5=2.5rem padding in all sides. Now, pt-2= 1rem padding top ect.
 
 
      In case of margin the same thing is followed. Here, instead of p  only m is used.
+    5. margin-top-- class "mt"
+    6. margin-bottom---class"mb"
+    7. padding-left---ml
+    8. padding-right---mr
 
 
      for large medium and smaller screen padding and margin  we need to use:
      pt-lg-4= for larger screen margin top 1rem, p-md-3= for medium screen padding all side is 1.5rem etc.
      if i use p-2 p-md-3 then first one will be applicable for smaller device the second one is for medium and higher.
+     9. p-0---all side no padding
+     10. p-1---all side 0.25rem padding
+     11. p-2---all side 0.5rem padding
+     12. p-3---all side 1rem padding
+     13. p-4---all side 1.5rem padding
+     14. p-5---all side 2rem padding
+      
+
+
+     15. pt-0---top side no padding
+     16. pt-1---top side 0.25rem padding
+     17. pt-2---top side 0.5rem padding
+     18. pt-3---top side 1rem padding
+     19. pt-4---top side 1.5rem padding
+     20. pt-5---top side 2rem padding
+
+
+     21. pl-0---left side no padding
+     22. pl-1---left side 0.25rem padding
+     23. pl-2---left side 0.5rem padding
+     24. pl-3---left side 1rem padding
+     25. pl-4---left side 1.5rem padding
+     26. pl-5---left side 2rem padding
+
+
+     27. pr-0---right side no padding
+     28. pr-1---right side 0.25rem padding
+     29. pr-2---right side 0.5rem padding
+     30. pr-3---right side 1rem padding
+     31. pr-4---right side 1.5rem padding
+     32. pr-5---right side 2rem padding
+
+     27. pb-0---bottom side no padding
+     28. pb-1---bottom side 0.25rem padding
+     29. pb-2---bottom side 0.5rem padding
+     30. pb-3---bottom side 1rem padding
+     31. pb-4---bottom side 1.5rem padding
+     32. pb-5---bottom side 2rem padding
+
+     ********** For margin***********
+     33. m-0---all side no margin
+     40.m-1---all side 0.25rem margin
+     41.m-2---all side 0.5rem margin
+     42.m-3---all side 1rem margin
+     43. m-4---all side 1.5rem margin
+     44. m-5---all side 2rem margin
+      
+
+
+     45. mt-0---top side no margin
+     46. mt-1---top side 0.25rem margin
+     47. mt-2---top side 0.5rem margin
+     48. mt-3---top side 1rem margin
+     49. mt-4---top side 1.5rem margin
+     50. mt-5---top side 2rem margin
+
+
+     51. ml-0---left side no margin
+     52. ml-1---left side 0.25rem margin
+     53. ml-2---left side 0.5rem margin
+     54. ml-3---left side 1rem margin
+     55. ml-4---left side 1.5rem margin
+     56. ml-5---left side 2rem margin
+
+
+     57. mr-0---right side no margin
+     58. mr-1---right side 0.25rem margin
+     59. mr-2---right side 0.5rem margin
+     60. mr-3---right side 1rem margin
+     61. mr-4---right side 1.5rem margin
+     62. mr-5---right side 2rem margin
+     63. mb-0---bottom side no margin
+     64. mb-1---bottom side 0.25rem margin
+     64. mb-2---bottom side 0.5rem margin
+     65. mb-3---bottom side 1rem margin
+     66. mb-4---bottom side 1.5rem margin
+     67. mb-5---bottom side 2rem margin
+
+
+
+
+
+
+
+     *********border, round related class*******
+     border---there will be a border outside the element
+     rounded---- a rounded border will be created
+     border-primary(blue),
+     
+     
+     
+
+     *********colors******************
+     bg-primary----blue
+     bg-secondary----blue
+     bg-info----blue
+     bg-primary----blue
+     bg-primary----blue
+     bg-primary----blue
+     bg-primary----blue
+     bg-secondary----blue
+     bg-info----blue
+     bg-primary----blue
+     bg-primary----blue
+     bg-primary----blue
+
     
     
     -->
-</head>
-<body>
-    <!-- Every row can be devided into 12 divisions. Now we can devide 
+        Every row can be devided into 12 divisions. Now we can devide 
     
         ******* Now to give border we need to use the class -- "border"-->
     <div class="container">
@@ -49,7 +161,7 @@
                     
                 </p>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12    ">
+            <div class="col-lg-3 col-md-6 col-sm-12 alert alert-primary   ">
                 <h4>This bootstrap col-4 will devide the whole screen into three parts</h4>
                 <p class= "border  border-primary  ">
                     Here every col-4 class of bootstrap will take 4portio  of the total 12 division of a row.
