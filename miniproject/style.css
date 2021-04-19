@@ -120,7 +120,7 @@ header{
 .card{
     border: 1px solid #ff02c0;
     border-radius: 5px;
-    padding: 15px;
+    /* padding: 15px; */
     margin: 20px 0;
     transition: 0.4s;
 }
@@ -128,5 +128,68 @@ header{
     transform: scale(1.1);
     box-shadow: 2px 6px 5px black;
 }
+#tutorial{
+    background: #e4fbff;
+}
 
 /* Tutorial ends */
+
+
+/* Feedback section starts */
+
+/* .my_link:hover{
+    text-decoration: underline;
+    
+}
+.my_color{
+    background-color: black;
+}
+#slider{
+    background-color: #0d0442;
+    padding: 7% 10%;
+
+}
+#hr-style{
+    border: 5px dotted white;
+    border-bottom: none;
+    width: 50px;
+}
+.feedback{
+    width: 500px;
+    height: 250px;
+} */
+#feedback{
+    background: #4b778d;
+    padding: 5%;
+}
+.carousel-item img{
+    width: 60px;
+    height: 300px;
+    margin-bottom: 5px;
+}
+.carousel-item{
+    text-align: center;
+    padding: 5% 15%;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+/* Feedback section ends */
+
+/* contact starts */
+#contact{
+    padding: 2% 10%;
+    background: #5eaaa8;
+}
+.form-group label{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+/* contact ends */
+
+/* footer starts */
+footer{
+    padding: 1% 10%;
+    background: #5b8a72;
+}
+/* footer ends */
