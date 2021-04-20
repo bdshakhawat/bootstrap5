@@ -192,4 +192,14 @@ footer{
     padding: 1% 10%;
     background: #5b8a72;
 }
+footer a{
+    color: white;
+    margin: 0 10px;
+}
+footer a:hover{
+    color: black;
+    
+}
 /* footer ends */
+
+/* responsive style */
