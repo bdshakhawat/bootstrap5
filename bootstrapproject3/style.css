@@ -147,6 +147,16 @@ body{
     .fixed-background{
         padding: 10rem 0;
     }
+    .emoji{
+        background-image: linear-gradient(to right, #4981b3, #ac2615);
+        min-height: 0;
+        padding: .5rem 0 !important;
+    }
+    .emoji .fa-plug{
+        margin: 0 auto;
+        color: #fff;
+        font-size: 2.5rem;
+    }
 /* fixed background ends */
 
 /* Bootstrap Mobile Gutter Fix start*/
@@ -155,7 +165,42 @@ body{
         margin-right: 0px !important;
     }
 /* Bootstrap Mobile Gutter Fix Ends*/
+ 
 
+/* footer starts */
+footer{
+    background-color: #383838;
+    padding: 1rem 2rem 3rem;
+}
+footer img{
+    height: 3.5rem;
+    margin: 1.5rem auto;
+}
+footer p,
+footer a,
+.socket a{
+    color: white;
+    text-decoration: none;
+}
+ul.social{
+    list-style-type: none;
+    display: flex;
+    max-width: 16rem;
+    margin: 0 auto;
+}
+.social li{
+    margin: 0 auto;
+    margin-left: 10px;
+}
+.socket{
+    background-color: #222222;
+    border-top: .1rem solid #4981b3;
+}
+
+
+    
+
+/* footer ends */
 
 
 
