@@ -204,4 +204,41 @@ ul.social{
 
 
 
+/* Responsive style starts */
+/* Devices under 1200px */
+@media  (max-width: 1199.98px){
+    .carousel-caption h1{
+        font-size: 2.8rem;
+        
+    }
+    
+    .carousel-caption h3{
+        font-size: 1.8rem;
+        
+    }
+
+}
+/* Devices under 992px */
+@media  (max-width: 991.98px){
+    .carousel-caption h1{
+        font-size: 2.5rem;
+        
+    }
+    
+    .carousel-caption h3{
+        font-size: 1.5rem;
+        
+    }
+    .btn-lg{
+        font-size: .95rem;
+    }
+
+}
+    
+
+
+/* Responsive style ends */
+
+
+
 
